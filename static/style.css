@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f6fb;
+    color: #172640;
+    font: 14px 'DM Sans', sans-serif;
+    min-height: 100vh;
+}
+
+.top {
+    height: 70px;
+    background: #11243e;
+    color: #c7d5e7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 max(calc((100vw - 1050px) / 2), 24px);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.brand {
+    font: 700 18px 'Space Grotesk';
+    color: white;
+    text-decoration: none;
+}
+
+.brand span {
+    color: #48c6c5;
+}
+
+.wrap {
+    max-width: 1050px;
+    margin: 65px auto;
+    padding: 0 20px;
+}
+
+.card {
+    max-width: 460px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #e1e8f0;
+    border-radius: 17px;
+    padding: 34px;
+    box-shadow: 0 14px 40px #19365710;
+}
+
+.eyebrow {
+    color: #178c96;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+h1 {
+    font: 700 28px 'Space Grotesk';
+    margin: 10px 0;
+}
+
+.muted {
+    color: #77869b;
+    line-height: 1.6;
+}
+
+form {
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 17px 0;
+    color: #34465f;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #dce4ed;
+    border-radius: 8px;
+    font: 14px 'DM Sans';
+    outline: none;
+}
+
+input:focus {
+    border-color: #268caa;
+    box-shadow: 0 0 0 3px #268caa18;
+}
+
+small {
+    display: block;
+    color: #8794a6;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+button {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    background: #176c87;
+    color: white;
+    padding: 13px;
+    font: 700 13px 'DM Sans';
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #11566d;
+}
+
+.secondary {
+    background: #233b59;
+}
+
+.bottom {
+    text-align: center;
+    color: #74839a;
+    font-size: 12px;
+    margin: 22px 0 0;
+}
+
+a {
+    color: #167b9b;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.notice {
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin: 0 auto 13px;
+    max-width: 460px;
+    font-size: 12px;
+}
+
+.notice.error {
+    background: #fff0f0;
+    color: #a63838;
+}
+
+.notice.success {
+    background: #eaf8f1;
+    color: #176b4d;
+}
+
+.notice.info {
+    background: #edf5ff;
+    color: #285b91;
+}
+
+.session-box {
+    background: #f3f8fb;
+    border: 1px solid #e0edf2;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 22px 0;
+}
+
+.session-box ul {
+    padding-left: 18px;
+    color: #61738b;
+    line-height: 1.9;
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    color: #9aa6b5;
+    font-size: 10px;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .wrap {
+        margin: 35px auto;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .top {
+        padding: 0 20px;
+    }
+}

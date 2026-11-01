@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block title %}Dashboard · SecureLab{% endblock %}
+{% block content %}
+<section class="card">
+  <div class="eyebrow">AUTHENTICATED SESSION</div><h1>Hello, {{ username|e }}</h1>
+  <p class="muted">You are signed in. This page is protected by a server-side user lookup.</p>
+  <div class="session-box"><b>Session protections</b><ul><li>Signed session cookie</li><li>HttpOnly and SameSite=Lax cookie flags</li><li>20-minute permanent-session lifetime</li><li>Session cleared on logout</li></ul></div>
+  <form method="post" action="{{ url_for('logout') }}"><button class="secondary" type="submit">Sign out</button></form>
+</section>
+{% endblock %}

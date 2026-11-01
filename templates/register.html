@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% block title %}Create account · SecureLab{% endblock %}
+{% block content %}
+<section class="card">
+  <div class="eyebrow">NEW ACCOUNT</div><h1>Create your account</h1><p class="muted">Use a unique username and a long password.</p>
+  <form method="post" action="{{ url_for('register') }}">
+    <label>Username<input name="username" autocomplete="username" minlength="3" maxlength="30" pattern="[A-Za-z0-9_.-]{3,30}" required><small>3–30 characters: letters, numbers, dot, underscore or hyphen.</small></label>
+    <label>Password<input type="password" name="password" autocomplete="new-password" minlength="10" maxlength="128" required><small>Use at least 10 characters. A longer passphrase is recommended.</small></label>
+    <button type="submit">Create account</button>
+  </form>
+  <p class="bottom">Already registered? <a href="{{ url_for('login') }}">Sign in</a></p>
+</section>
+{% endblock %}
